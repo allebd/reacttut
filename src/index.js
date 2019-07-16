@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import App from './App';
 
 const root = document.querySelector('#root');
 
-const Test = () => <h1>Hello World</h1>;
+// react component, root
+ReactDom.render(<App />, root);
 
-// react component
-ReactDom.render(<Test />, root);
+module.hot.accept();
